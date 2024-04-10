@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Parabéns Gatinha!</title>
+        <link rel="shortcut icon" href="assets/css/images/favicon.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+
+        <!-- Twitter Cards -->
+        <meta name="twitter:title" content="Parabéns meu Amor!" />
+        <meta name="twitter:description" content="Te amo! &#10084" />
+        <meta name="twitter:image" content="https://alexaquino.github.io/assets/css/images/facebook_feliz_aniversario_princesa.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <!-- Facebook Open Graph -->
+        <meta property="og:image" content="https://alexaquino.github.io/assets/css/images/facebook_feliz_aniversario_princesa.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width"  content="600" />
+        <meta property="og:image:height" content="315" />
+        <meta property="og:site_name" content="alexaquino.space" />
+        <meta property="og:title" content="Parabéns meu Amor!" />
+        <meta property="og:description" content="Te amo! &#10084" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://alexaquino.github.io/feliz_aniversario_princesa" />
+        <meta property="fb:app_id" content="1140424696044800" />
+        <meta property="fb:admins" content="100000462238479" />
+
+		<!-- CSS -->
+        <link rel="stylesheet" href="assets/css/main_feliz_aniversario_princesa.css"/>
+        <link rel="stylesheet" href="assets/css/font-awesome-animation.min.css" >
+
+	</head>
+	<body class="loading">
+		<!-- Música de Fundo -->
+		<audio src="assets/audio/Ed Sheeran.mp3" controls autoplay></audio>
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+                <!-- Header -->
+				<header id="header">
+				    <h1>Feliz aniversário, <br>Gatinha! 🎉
+
+					</h1>
+				    	<p>"Que seu dia seja tão radiante quanto seu sorriso e tão especial quanto você é para mim. Que cada momento seja repleto de amor, alegria e surpresas encantadoras. Você merece todo o amor e felicidade do mundo. Parabéns!"
+						</p>
+				    <nav>
+				    <nav>
+				        <ul>
+				            <li><a class="icon fa-heart faa-pulse animated" href="https://wa.me/31993553174/?text=Acabei%20de%20receber%20seu%20presente,%20muito%20obrigado! ❤️" target="_blank"></a>
+                  <span class="label"></span></a></li>
+                        </ul>
+				    </nav>
+				</header>
+				<!-- Footer -->
+				<footer id="footer">
+					<footer id="footer"><span class="icon fa-volume-up"><span class="label">volume-up</span></footer> 
+				</footer>
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+
+			const defaults = {
+  spread: 360,
+  ticks: 100,
+  gravity: 0,
+  decay: 0.94,
+  startVelocity: 30,
+  shapes: ["heart"],
+  colors: ["FFC0CB", "FF69B4", "FF1493", "C71585"],
+};
+
+confetti({
+  ...defaults,
+  particleCount: 50,
+  scalar: 2,
+});
+
+confetti({
+  ...defaults,
+  particleCount: 25,
+  scalar: 3,
+});
+
+confetti({
+  ...defaults,
+  particleCount: 10,
+  scalar: 4,
+});
+		</script>
+	</body>
+</html>
